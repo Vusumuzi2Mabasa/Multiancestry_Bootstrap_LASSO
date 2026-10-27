@@ -1,0 +1,80 @@
+Bootstrap LASSO selection replacing Manc-COJO stepwise selection
+Author: Vusumuzi Mabasa
+ALL PHENOTYPES ARE SIMULATED. No AWI-Gen data or biological discovery claims.
+
+The local repository is D:/Multiancestry_Bootstrap_LASSO. No Git remote or
+public repository has been created. Do not push to the predecessor study.
+
+Tested Windows runtime (PowerShell):
+$py = 'C:/Users/VUSI/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe'
+$env:SCIENTIFIC_PYTHON = 'D:/Multiancestry_GWAS_Bayesian_Comparison/tmp/runtime'
+$env:RSCRIPT = 'C:/Program Files/R/R-4.5.1/bin/Rscript.exe'
+Set-Location 'D:/Multiancestry_Bootstrap_LASSO'
+
+R must ALWAYS use --vanilla. Never read or source personal .Renviron/.Rprofile.
+R packages: glmnet 4.1-10 (validation), jsonlite 2.0.0, Matrix 1.7.4.
+Scientific Python versions and upstream commits are in results/provenance.json.
+For a different machine use an isolated Python environment with requirements.txt,
+set SCIENTIFIC_PYTHON to its site-packages, and set RSCRIPT to the chosen Rscript.
+Do not overwrite a user's existing package libraries.
+
+Input reuse and provenance:
+& $py src/prepare_inputs.py --source-study 'D:/Multiancestry_GWAS_Bayesian_Comparison'
+& $py src/test_pipeline.py
+& $py src/row_diagnostic.py
+
+The six region_*.npz inputs are LOCAL ONLY, including public-reference haplotypes.
+No donor identifier files are needed or copied. To reconstruct these derivatives
+elsewhere, use the public-reference download and preparation scripts at source
+study commit 03a5a07826a82380e6a1a9191d4f0a7f61f0f6af and its documented Phase 3
+GRCh37 chromosome 22 input, donor-split seeds and QC. Verify the resulting hashes
+against results/provenance.json before running. That input reconstruction is a
+prerequisite; the Git checkout alone intentionally contains no raw genotypes.
+
+Protocol freeze, tuning and final validation, in strict order:
+git add protocol src .gitignore .gitattributes
+git commit -m 'Freeze design and tested implementation before tuning'
+& $py src/benchmark.py --phase tuning --stage calibrate --workers 2
+& $py src/benchmark.py --phase tuning --stage evaluate --workers 2
+git add protocol/tuning_freeze.json results/tuning
+git commit -m 'Freeze independently tuned penalty before validation'
+& $py src/benchmark.py --phase validation --stage calibrate --workers 2
+git add protocol/validation_threshold_freeze.json results/validation
+git commit -m 'Freeze null calibration thresholds before fresh evaluation'
+& $py src/benchmark.py --phase validation --stage evaluate --workers 2
+& $py src/analyze.py
+& $py src/build_manuscript.py
+
+Completed shards are reused only when core implementation and design hashes match.
+To rerun from scratch, archive the relevant results/tuning and results/validation
+directories and frozen threshold files outside this checkout first. Never mix
+results from different protocols. Fresh biological simulation conclusions require
+new seed streams and a newly frozen protocol; rerunning these streams reproduces
+this experiment. Runtime fields can differ across executions.
+
+Standalone experimental wrapper (eight variants, two cohorts, chromosome 22):
+& $py src/select_wrapper.py --sumstats path/to/pop1.ma path/to/pop2.ma --ld path/to/pop1_ld path/to/pop2_ld --lambda 2.5 --frequency-cutoff 0.9 --bootstraps 100 --seed 123 --out work/example_output
+The example lambda and cutoff are syntax examples, NOT recommended GWAS thresholds.
+Use independently calibrated values for the applicable data-generating setting.
+Input .ma fields: SNP A1 A2 freq b se p N. Signed .ld has SNP1 SNP2 R, no header,
+including all upper-triangle entries and diagonals. Each LD prefix needs .bim and
+.frq. N must be constant within a cohort in this validated research release.
+The wrapper harmonizes alleles, bootstraps the summary model in R, and calls the
+unchanged official executable in --cojo-joint mode. It never edits that executable.
+
+Word manuscript with native editable equations and matched README content:
+& $py src/build_word.py --pandoc 'C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/pandoc.exe'
+The document skill's mark_artifact_operation_started.mjs is executed once before
+initial document authoring in the authoring environment. It is telemetry, not an
+analysis dependency. Rendering uses the document skill render_docx.py, the bundled
+Python and Poppler, and the existing project-local portable LibreOffice runtime
+on Windows; no user's active desktop Word/LibreOffice instance is automated.
+Render every page and inspect page PNGs before delivery. Internal QA stays in work/.
+
+Publication preparation:
+& $py src/final_audit.py
+git status --short
+git diff --check
+Review README, figures, tables, tests and Word report. Keep data/local/, work/,
+tools/*.exe and personal R startup files ignored. Publishing requires a separately
+requested new public repository name; no publish command is included here.

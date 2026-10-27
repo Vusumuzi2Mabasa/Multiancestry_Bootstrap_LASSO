@@ -1,0 +1,31 @@
+{
+  "code_sha256": "a78bbbc7b9bf983f35a590f38f2534cfcce3fde2aff31d323d07a8eb8e1fd7c1",
+  "rank": 95,
+  "calibration_count": 99,
+  "lambdas": [
+    1,
+    1.5,
+    2,
+    2.5
+  ],
+  "cutoffs": {
+    "matched": {
+      "Bootstrap_lambda1": 1.0,
+      "Bootstrap_lambda1.5": 0.97,
+      "Bootstrap_lambda2": 0.9,
+      "Bootstrap_lambda2.5": 0.77,
+      "Manc_stepwise": 2.1935396607918527,
+      "Exact_rho08": 0.6881858923703278,
+      "MultiSuSiE_L5": 0.9597657661630771
+    },
+    "in_sample": {
+      "Bootstrap_lambda1": 1.0,
+      "Bootstrap_lambda1.5": 0.96,
+      "Bootstrap_lambda2": 0.88,
+      "Bootstrap_lambda2.5": 0.78,
+      "Manc_stepwise": 2.1935396607918527,
+      "Exact_rho08": 0.6428750443358167,
+      "MultiSuSiE_L5": 0.9352175228687951
+    }
+  }
+}
