@@ -109,10 +109,11 @@ def cell(phase,stage,region,pop):
     return f'{phase} {stage} r{region} {pop}: {len(bank)} contexts complete'
 def freeze_tuning():
     import pandas as pd
-    d=pd.concat([pd.read_csv(p,sep='\t') for p in (ROOT/'results/tuning').glob('*/metrics.tsv')]);d=d[d.ld=='matched'];choices=[]
+    d=pd.concat([pd.read_csv(p,sep='\t',keep_default_na=False,na_values=['']) for p in (ROOT/'results/tuning').glob('*/metrics.tsv')]);d=d[d.ld=='matched'];choices=[]
     for lam in CFG['lambda_grid']:
         sub=d[d.method==label(lam,'tuning')];null=float(sub[sub.scenario=='null'].any_selection.mean());alt=sub[sub.scenario!='null']
-        objective=float((alt.recall-alt.fdp).mean());choices.append(dict(lambda_value=lam,null_rate=null,recall_minus_fdp=objective))
+        objective=float((alt.recall-alt.fdp).mean());assert np.isfinite(null) and np.isfinite(objective)
+        choices.append(dict(lambda_value=lam,null_rate=null,recall_minus_fdp=objective))
     ok=[x for x in choices if x['null_rate']<=.10];chosen=max(ok,key=lambda x:(x['recall_minus_fdp'],x['lambda_value']))['lambda_value'] if ok else 2.5
     save(ROOT/'protocol/tuning_freeze.json',{'lambda':chosen,'candidates':choices,'fallback':not bool(ok),'code_sha256':codehash(),'evaluation_seed':CFG['validation']['seed'],'tuning_metrics_sha256':{str(p.relative_to(ROOT)):sha(p) for p in (ROOT/'results/tuning').glob('*/metrics.tsv')}})
     print('Frozen lambda',chosen)
