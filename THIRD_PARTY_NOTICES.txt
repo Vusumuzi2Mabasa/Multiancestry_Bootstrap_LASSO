@@ -1,0 +1,17 @@
+This project is authored by Vusumuzi Mabasa and is an independent research wrapper.
+Manc-COJO v1.1.0 is unchanged, externally obtained, and excluded from Git.
+Source https://github.com/light156/multi-ancestry-COJO
+Pinned source 296953627d2d2b7bc3bfa04cf65524c5013c3b41; MIT license in tools/Manc_LICENSE.txt.
+Cite Wang et al. Nature Genetics (2026), doi:10.1038/s41588-026-02799-1.
+MultiSuSiE is an external GPL-3 dependency, not vendored here.
+Source https://github.com/jordanero/MultiSuSiE at a89e091d45297d983118438f116c3eb5bc1219ed.
+Cite Rossen et al., doi:10.1038/s41588-025-02450-5.
+R glmnet is an external dependency used for numerical validation (GPL-2).
+Cite Friedman, Hastie and Tibshirani (2010), doi:10.18637/jss.v033.i01.
+Reference inputs are 1000 Genomes Phase 3 public GRCh37 chromosome 22 data.
+Reuse statement https://www.internationalgenome.org/IGSR_disclaimer/
+Cite the 1000 Genomes Project Consortium (2015), doi:10.1038/nature15393.
+Raw genotypes and donor identifiers are never committed. All phenotypes are simulated.
+Reference preparation and secondary comparator code derive from Vusumuzi Mabasa's
+Multiancestry_GWAS_Bayesian_Comparison commit 03a5a07826a82380e6a1a9191d4f0a7f61f0f6af.
+The source study and its GitHub repository are not modified by this project.

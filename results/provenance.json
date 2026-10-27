@@ -1,0 +1,78 @@
+{
+  "source_study_commit": "03a5a07826a82380e6a1a9191d4f0a7f61f0f6af",
+  "upstream_manc_commit": "296953627d2d2b7bc3bfa04cf65524c5013c3b41",
+  "reference_files": [
+    {
+      "file": "data/local/region_0.json",
+      "sha256": "673c1a3048342336708cce39f31b030a69732b03bf7f5f395d71ccb6a1958ec1"
+    },
+    {
+      "file": "data/local/region_0.npz",
+      "sha256": "f902c70a6b0eff6293640144073ce5a3c25a8693f835f1f8c0c4d51cecf9b753"
+    },
+    {
+      "file": "data/local/region_1.json",
+      "sha256": "538e13fc48e1d9a5e122be30c288a45ba48df0031305087e4b84a14e12d84a42"
+    },
+    {
+      "file": "data/local/region_1.npz",
+      "sha256": "34452dccb5cdd1fb2039d063f32ce4c7ea6a251940e8572d5336af644850c139"
+    },
+    {
+      "file": "data/local/region_2.json",
+      "sha256": "4cae39ef4dd95f5b1a093af2ba3321f2992a565b19b3b4bb0918f24543c35bd6"
+    },
+    {
+      "file": "data/local/region_2.npz",
+      "sha256": "b8aaee54933b43cd0acb991f3ffe65c6510279777ead2dbffd91b93317621a2b"
+    },
+    {
+      "file": "data/local/region_3.json",
+      "sha256": "d21ef20d11a5435e06d6b885fd3e6b60828d7d869e16d5dbff2b725ed8f92a28"
+    },
+    {
+      "file": "data/local/region_3.npz",
+      "sha256": "1016ad314678499f4f67fb5cf6a2ab3f03ef6429b76127a3ae70036e9f43a021"
+    },
+    {
+      "file": "data/local/region_4.json",
+      "sha256": "d246672f4f607cc9e60351fcade7684d74425aa751865c62b99bd73ed804e1ce"
+    },
+    {
+      "file": "data/local/region_4.npz",
+      "sha256": "89426e05a95aa094b3bf9001e6a18d6797d17122b56668cfcd91691cd3532749"
+    },
+    {
+      "file": "data/local/region_5.json",
+      "sha256": "840a4c89339a52689ca7f59115f081d5763a7b678e797754a90103df13b25642"
+    },
+    {
+      "file": "data/local/region_5.npz",
+      "sha256": "99e2efdc818264a74d54e4e78caf5f2631d571faf69ab20b60041ce70e1fe1b9"
+    }
+  ],
+  "manc_sha256": "4cab4da95e481c5f35bb365a721c696b21ce3aa07c2c32e6e01ab45feb51f3f9",
+  "public_vcf_sha256": "a90c16c4ff2b3196476d506ae13cb3047fae8670163c7c932c4b0239aef3daf5",
+  "source_study": "https://github.com/Vusumuzi2Mabasa/Multiancestry_GWAS_Bayesian_Comparison",
+  "manc_url": "https://github.com/light156/multi-ancestry-COJO/releases/download/v1.1.0/manc_cojo_win.exe",
+  "population_donors": {
+    "CEU": {
+      "study": 59,
+      "reference": 40
+    },
+    "YRI": {
+      "study": 68,
+      "reference": 40
+    },
+    "LWK": {
+      "study": 59,
+      "reference": 40
+    }
+  },
+  "raw_data_published": false,
+  "phenotypes": "SIMULATED",
+  "python": "3.12.14",
+  "R_startup": "--vanilla",
+  "numpy": "2.3.5",
+  "multisusie_commit": "a89e091d45297d983118438f116c3eb5bc1219ed"
+}

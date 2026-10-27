@@ -1,0 +1,188 @@
+{
+  "all_passed": true,
+  "regions": 6,
+  "markers": 48,
+  "donor_overlap": 0,
+  "arrays": [
+    {
+      "region": 0,
+      "pool": "CEU_reference",
+      "sha256": "daffa3430ac82d567fc1500a50e88ffad16c4d94789e923b52929e6606475a22"
+    },
+    {
+      "region": 0,
+      "pool": "CEU_study",
+      "sha256": "1aff5ee91c75f2ca9b8a80092725886602b45453e7ea08c299bce89c44d473d2"
+    },
+    {
+      "region": 0,
+      "pool": "YRI_reference",
+      "sha256": "f00ef285f8fafb202e9343746e427076291755cf9554102ddb1744328efde2c0"
+    },
+    {
+      "region": 0,
+      "pool": "YRI_study",
+      "sha256": "429a03b7b5c5922cc69e26e3746df285ee4ed959e0ed52433f5ebb692e103d1f"
+    },
+    {
+      "region": 0,
+      "pool": "LWK_reference",
+      "sha256": "5394c9a2b4de180867e1f8bb92a4fcb930c844565d8b7dc6b897df399d6a019a"
+    },
+    {
+      "region": 0,
+      "pool": "LWK_study",
+      "sha256": "421cc5e2d5771a5ca66b646f60f0db2409c78c737d5f0e245a4d5ea2e8fe2bae"
+    },
+    {
+      "region": 1,
+      "pool": "CEU_reference",
+      "sha256": "ad9c08572033efb71a72bfb35d66759d91ddece5c7c90c01e388f2c2e96fffa4"
+    },
+    {
+      "region": 1,
+      "pool": "CEU_study",
+      "sha256": "416fab53fe615a193dcc8e4adc81f6a23133828f964703636556df4e59a9766e"
+    },
+    {
+      "region": 1,
+      "pool": "YRI_reference",
+      "sha256": "cec63016c3833cfe284076406eb9fc57c5dab4cda6fa03f17e0fae39cdd068c9"
+    },
+    {
+      "region": 1,
+      "pool": "YRI_study",
+      "sha256": "7a8155510b7caf0050f0c6f59f099abe62a41bfe567991e8a5b7aae7833ef57d"
+    },
+    {
+      "region": 1,
+      "pool": "LWK_reference",
+      "sha256": "118ab3302d86740be06707724d5544b37c4e3e4ff3956702557c6353c264fe18"
+    },
+    {
+      "region": 1,
+      "pool": "LWK_study",
+      "sha256": "ef9f1ddb943a4434cc147dab4ac969b27375824ceb0b597b326c08d4d33e5970"
+    },
+    {
+      "region": 2,
+      "pool": "CEU_reference",
+      "sha256": "abd546f6054972e44a029b1b6b7e65b83510b358e8dcf2425cb0f0006bf878d3"
+    },
+    {
+      "region": 2,
+      "pool": "CEU_study",
+      "sha256": "fdadfbf133f7f948da4ebbfac5fa8ef780bed319b0da81b0c318396ffc160158"
+    },
+    {
+      "region": 2,
+      "pool": "YRI_reference",
+      "sha256": "5ffe4535ef96e9e8c1eefe12689621d04f48ec6e6a8b06f9312e8261dcd3efc6"
+    },
+    {
+      "region": 2,
+      "pool": "YRI_study",
+      "sha256": "3481e6818f23265079430c4cc4a15e18bfdec6608165520d9cc02098b2bb5853"
+    },
+    {
+      "region": 2,
+      "pool": "LWK_reference",
+      "sha256": "6f55ed109709020cfb25299bfbe1fe479ad7539b51f209c5593d150b7159fc1b"
+    },
+    {
+      "region": 2,
+      "pool": "LWK_study",
+      "sha256": "e14bf3be109774e90862a0e9de7d49b7cb8beb3e26bb6bde690b77435c657fd9"
+    },
+    {
+      "region": 3,
+      "pool": "CEU_reference",
+      "sha256": "cb60b3ba0f4ba082768ccaf1daf00cd36a5cfaff29de748d0b76f52dc9463e66"
+    },
+    {
+      "region": 3,
+      "pool": "CEU_study",
+      "sha256": "9fa2a430a7cba8d2a2e91bf9c5768d73901811981b15a567dab446ccdff7e2b2"
+    },
+    {
+      "region": 3,
+      "pool": "YRI_reference",
+      "sha256": "a765ebc573a171f6c9cb08d265e0a1e972234b05ea96d93d986106758189cff2"
+    },
+    {
+      "region": 3,
+      "pool": "YRI_study",
+      "sha256": "583af8b2bd318615d10a2e9015fa4648fa8a26c56518fcd8e2c74b2129c595ca"
+    },
+    {
+      "region": 3,
+      "pool": "LWK_reference",
+      "sha256": "99286472e65c456eb3e5aa9b506b70ded4b7c5e95cf50950d664b6c06eb9aa52"
+    },
+    {
+      "region": 3,
+      "pool": "LWK_study",
+      "sha256": "e148d7bddbf55e0605aa9658d17a7a97c429068b6f443cde1b41c599f614921c"
+    },
+    {
+      "region": 4,
+      "pool": "CEU_reference",
+      "sha256": "d948b64630f037413976498db8729beba2e2641215251ef9dcf8643470f3ddab"
+    },
+    {
+      "region": 4,
+      "pool": "CEU_study",
+      "sha256": "6a44f251b0476c6f814784c8efe08f387239f4ca0192ad763b55a43cfd05a752"
+    },
+    {
+      "region": 4,
+      "pool": "YRI_reference",
+      "sha256": "4d95a1e2a609ce9f958c802c33fb5c7525ce2616a268d983d9afb6a8414f3e2f"
+    },
+    {
+      "region": 4,
+      "pool": "YRI_study",
+      "sha256": "547b12a1811e12d0eb3432130eb2009c2d2f074d77973a697d60d59c264192ff"
+    },
+    {
+      "region": 4,
+      "pool": "LWK_reference",
+      "sha256": "1d98fd35e18cdc10f338362e8a6052d2ac06e52c24957d4fe3f3ca86f911800c"
+    },
+    {
+      "region": 4,
+      "pool": "LWK_study",
+      "sha256": "77ddb7e1c05f8e6eee9b60785ba48372cd820c2900e671f4d4b6c6c5bc935aba"
+    },
+    {
+      "region": 5,
+      "pool": "CEU_reference",
+      "sha256": "c4523de0b516a50a091b332b0252e9a53132fe131f9127a798bad8799079c3e0"
+    },
+    {
+      "region": 5,
+      "pool": "CEU_study",
+      "sha256": "721d40e472ea767391539c953c2982022970fd2a0dcaa1e543e1c67c8b47727e"
+    },
+    {
+      "region": 5,
+      "pool": "YRI_reference",
+      "sha256": "716af581f001c8463655bef50005c4fc1ff2ed951c7fa3ae02a55b50749d3c65"
+    },
+    {
+      "region": 5,
+      "pool": "YRI_study",
+      "sha256": "0b8d2106187d05748c795c19a26ec11229c46a3284ea27aa66975a00335e9435"
+    },
+    {
+      "region": 5,
+      "pool": "LWK_reference",
+      "sha256": "f9eacf1874e77f8cc44a167b709c250128c15c87fd53a561e73d3ed414191179"
+    },
+    {
+      "region": 5,
+      "pool": "LWK_study",
+      "sha256": "23f494feaa48c8880fca8a598261343aa148edfa8eafc8bdb22741543f71f81f"
+    }
+  ]
+}

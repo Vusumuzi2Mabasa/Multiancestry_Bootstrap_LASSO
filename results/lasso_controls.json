@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "glmnet_max_difference": 1.3574021906492817e-07,
+  "max_kkt": 7.5491612960831844e-11,
+  "covariance_max_difference": 0.011121977349912271,
+  "individual_residual_covariance_difference": 0.0599513394800264,
+  "R": "4.5.1",
+  "glmnet": "4.1.10"
+}

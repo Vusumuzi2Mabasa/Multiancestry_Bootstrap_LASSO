@@ -1,0 +1,9 @@
+data/local/
+work/
+tools/*.exe
+__pycache__/
+*.pyc
+.Renviron
+.Rprofile
+.Rhistory
+.RData
