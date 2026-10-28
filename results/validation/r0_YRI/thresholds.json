@@ -1,0 +1,22 @@
+{
+  "code_sha256": "dfe892eed058d8ed401d7e0cbd4fc72569cc1e88eaec1d1aaf9fd7716b8d8e02",
+  "rank": 190,
+  "calibration_count": 199,
+  "lambdas": [
+    2.5
+  ],
+  "cutoffs": {
+    "matched": {
+      "Bootstrap_LASSO_Manc": 0.71,
+      "Manc_stepwise": 2.5167426886845017,
+      "Exact_rho08": 0.802819353854904,
+      "MultiSuSiE_L5": 0.8765561012399912
+    },
+    "in_sample": {
+      "Bootstrap_LASSO_Manc": 0.71,
+      "Manc_stepwise": 2.5167426886845017,
+      "Exact_rho08": 0.7223930285900967,
+      "MultiSuSiE_L5": 0.8634102566139864
+    }
+  }
+}

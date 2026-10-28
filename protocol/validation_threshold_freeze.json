@@ -1,0 +1,17 @@
+{
+  "code_sha256": "dfe892eed058d8ed401d7e0cbd4fc72569cc1e88eaec1d1aaf9fd7716b8d8e02",
+  "thresholds": {
+    "results\\validation\\r0_LWK\\thresholds.json": "0a6b20f684669c19903056cad097269b5735f8ebb9e1f404513091d277917f63",
+    "results\\validation\\r0_YRI\\thresholds.json": "8a8725843aa4779011884a764efe12b00a66b34db4e2ee6585127b36d640d757",
+    "results\\validation\\r1_LWK\\thresholds.json": "ae3080ff246d394d5a01f54f7850d0a8ce9d27c970c33884cbae98afa5ea576b",
+    "results\\validation\\r1_YRI\\thresholds.json": "4bb274e13ae2f38eb6f557ea087292497011e115cd7a9768316c65c62c4f2254",
+    "results\\validation\\r2_LWK\\thresholds.json": "a28cee8352444e41a3f74b493be1a0e6ed82213026e66e767a73e8625eda4627",
+    "results\\validation\\r2_YRI\\thresholds.json": "4cc2f77d1eb4dea9764319cf1f4417a82743fb49075a0d39292e7907b8f1bb45",
+    "results\\validation\\r3_LWK\\thresholds.json": "228d5798c06357c3ecd663cf0953b761c2e6307728c798806a2f3f9c0c791847",
+    "results\\validation\\r3_YRI\\thresholds.json": "13c09f3b81bf0e5224e28c169df7565e89a783b76079969827d222f7192696fe",
+    "results\\validation\\r4_LWK\\thresholds.json": "ddda7b10743ee06a3ffa667b2af95c7e3cec9bf321a2ad2e2015d3a4644b8711",
+    "results\\validation\\r4_YRI\\thresholds.json": "58d156596798bba25b392f80a783f1db78581255e685e3b6a15b8c19b6b9464f",
+    "results\\validation\\r5_LWK\\thresholds.json": "39decb4eeb0da0dc3e88137353f3d79b7af3cc2d328c2d10e0c1e6d90832f51e",
+    "results\\validation\\r5_YRI\\thresholds.json": "302ffe9ddff03bd90c2757a2cd99565e3c10db4794aa517f7d3a063be37ba27d"
+  }
+}
