@@ -48,11 +48,11 @@ def main():
     title=source.splitlines()[0].removeprefix('# ')
     text='\n'.join(source.splitlines()[4:])
     text='\n'.join(line for line in text.splitlines() if not line.startswith('[Word manuscript]'))
-    # No public repository exists yet; keep relative paths as explicit local references.
-    text=re.sub(r'(?<!!)\[([^]]+)\]\((?!https?://|#)([^)]+)\)',r'\1 (\2)',text)
+    # Make repository links usable when the Word report is downloaded alone.
+    text=re.sub(r'(?<!!)\[([^]]+)\]\((?!https?://|#)([^)]+)\)',r'[\1](https://github.com/Vusumuzi2Mabasa/Multiancestry_Bootstrap_LASSO/blob/main/\2)',text)
     # Standard Markdown plus TeX math lets Pandoc emit native Office Math.
     text=re.sub(r'!\[([^]]+)\]\(([^)]+)\)',r'![\1](\2){width=6.6in}',text)
-    out=ROOT/'report/Bootstrap_LASSO_Manc_COJO_Report.docx'
+    out=ROOT/'report/Bootstrap_LASSO_Manc_COJO_Research_Report.docx'
     out.parent.mkdir(exist_ok=True)
     with tempfile.TemporaryDirectory(dir=ROOT/'work') as temp:
         temp=Path(temp);ref=temp/'reference.docx';reference(ref)

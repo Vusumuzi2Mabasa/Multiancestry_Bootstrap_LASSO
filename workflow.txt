@@ -2,8 +2,9 @@ Bootstrap LASSO selection replacing Manc-COJO stepwise selection
 Author: Vusumuzi Mabasa
 ALL PHENOTYPES ARE SIMULATED. No AWI-Gen data or biological discovery claims.
 
-The local repository is D:/Multiancestry_Bootstrap_LASSO. No Git remote or
-public repository has been created. Do not push to the predecessor study.
+The local repository is D:/Multiancestry_Bootstrap_LASSO.
+Public repository: https://github.com/Vusumuzi2Mabasa/Multiancestry_Bootstrap_LASSO
+The predecessor study is preserved as a separate repository.
 
 Tested Windows runtime (PowerShell):
 $py = 'C:/Users/VUSI/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe'
@@ -78,5 +79,7 @@ Publication preparation:
 git status --short
 git diff --check
 Review README, figures, tables, tests and Word report. Keep data/local/, work/,
-tools/*.exe and personal R startup files ignored. Publishing requires a separately
-requested new public repository name; no publish command is included here.
+tools/*.exe, Office lock files and personal R startup files ignored.
+Publish reviewed commits only to this project repository:
+git push -u origin main
+Verify that git ls-remote origin refs/heads/main matches git rev-parse HEAD.

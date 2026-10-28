@@ -7,3 +7,9 @@ __pycache__/
 .Rprofile
 .Rhistory
 .RData
+
+# Temporary Microsoft Office owner files
+~$*
+
+# Preserve the report currently open in Word as a local pre-publication copy.
+report/Bootstrap_LASSO_Manc_COJO_Report.docx

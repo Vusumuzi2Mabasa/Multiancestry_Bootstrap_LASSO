@@ -4,7 +4,7 @@
 
 This study tests an experimental replacement for the selection stage of Manc-COJO. It uses public CEU, YRI and LWK reference haplotypes to generate study genotypes; **every phenotype is simulated**. No AWI-Gen data, observed clinical outcomes or biological discoveries are claimed. The new pipeline is a wrapper using R bootstrap LASSO selection followed by the unchanged official Manc-COJO joint estimator. It is not an official release, forked executable or endorsement by the Manc-COJO authors.
 
-[Word manuscript](report/Bootstrap_LASSO_Manc_COJO_Report.docx) · [Protocol](protocol/design.json) · [Mathematical specification](protocol/methods.md) · [Audited results](results/validation_summary.tsv) · [Paired uncertainty](results/paired_differences.tsv) · [Workflow](workflow.txt)
+[Word manuscript](report/Bootstrap_LASSO_Manc_COJO_Research_Report.docx) · [Protocol](protocol/design.json) · [Mathematical specification](protocol/methods.md) · [Audited results](results/validation_summary.tsv) · [Paired uncertainty](results/paired_differences.tsv) · [Workflow](workflow.txt)
 
 ## Abstract
 
@@ -213,7 +213,7 @@ An R bootstrap LASSO selector can replace the stepwise stage in a Manc-COJO work
 
 ## Reproducibility and availability
 
-All project files are stored locally on Toshiba. The repository is prepared for review but has no public remote and has not been published. The predecessor repository is preserved. The [workflow](workflow.txt) gives commands for provenance verification, numerical controls, independent tuning, threshold freezing, validation, auditing and manuscript generation. Invoke every Rscript with `--vanilla`; personal R startup files are never read.
+All project files are stored locally on Toshiba. The source, audited results, figures and Word manuscript are available in the public [GitHub repository](https://github.com/Vusumuzi2Mabasa/Multiancestry_Bootstrap_LASSO). The predecessor repository is preserved. The [workflow](workflow.txt) gives commands for provenance verification, numerical controls, independent tuning, threshold freezing, validation, auditing and manuscript generation. Invoke every Rscript with `--vanilla`; personal R startup files are never read.
 
 Public-reference genotype derivatives stay in ignored `data/local/`; raw genotypes and donor identifiers are not committed. [Provenance](results/provenance.json) records exact input hashes and the official executable identity. Reproduction requires those verified local inputs or regeneration using the pinned source study's public-data preparation workflow. [Fit statuses](results/fit_status.tsv), [audit](results/audit.json), [thresholds](results/threshold_summary.tsv) and all per-replicate tables are retained. The Word manuscript is generated from this README with native editable equations and author Vusumuzi Mabasa.
 

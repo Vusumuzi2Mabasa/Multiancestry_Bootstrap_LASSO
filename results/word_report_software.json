@@ -1,7 +1,7 @@
 {
   "builder": "src/build_word.py",
   "source": "README.md",
-  "source_sha256": "70868cb500915ec951a0b3a3b4440cf10210aed94f31d054dc230ae1c5133f5c",
+  "source_sha256": "b19c049b039be7d5e34d7f0da5eae3d426a667349980ed15a292a101a5cf0b41",
   "pandoc": "pandoc 3.8.3",
   "python_docx": "1.2.0",
   "author": "Vusumuzi Mabasa",
