@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "control": "Full-support allele flip with deterministic joint-estimator comparison",
+  "max_effect_error": 0.0,
+  "bootstrap_draw_by_draw_invariance_claimed": false
+}

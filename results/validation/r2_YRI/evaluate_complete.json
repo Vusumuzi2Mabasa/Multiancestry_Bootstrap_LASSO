@@ -1,0 +1,8 @@
+{
+  "code_sha256": "dfe892eed058d8ed401d7e0cbd4fc72569cc1e88eaec1d1aaf9fd7716b8d8e02",
+  "contexts": 360,
+  "R_batch_wall_seconds": 39.253284199978225,
+  "max_kkt": 1.053070839418524e-07,
+  "threshold_sha256": "4cc2f77d1eb4dea9764319cf1f4417a82743fb49075a0d39292e7907b8f1bb45",
+  "failed_fits": 0
+}

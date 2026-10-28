@@ -1,0 +1,11 @@
+{
+  "numpy": "2.3.5",
+  "scipy": "1.18.1",
+  "pandas": "3.0.1",
+  "numba": "0.68.0",
+  "matplotlib": "3.11.2",
+  "MultiSuSiE": "1.0",
+  "python-docx": "1.2.0",
+  "validation_workers": 4,
+  "calibration_workers": 2
+}

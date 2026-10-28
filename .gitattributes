@@ -1,6 +1,7 @@
 * text=auto eol=lf
 # Preserve recorded JSON bytes so Windows-generated SHA-256 freezes survive checkout.
-*.json -text
+*.json -text whitespace=cr-at-eol
 *.docx binary
 *.png binary
 *.pdf binary
+*.tsv -text whitespace=-blank-at-eol,cr-at-eol

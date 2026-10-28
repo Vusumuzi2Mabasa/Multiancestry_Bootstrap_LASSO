@@ -1,0 +1,10 @@
+{
+  "builder": "src/build_word.py",
+  "source": "README.md",
+  "source_sha256": "70868cb500915ec951a0b3a3b4440cf10210aed94f31d054dc230ae1c5133f5c",
+  "pandoc": "pandoc 3.8.3",
+  "python_docx": "1.2.0",
+  "author": "Vusumuzi Mabasa",
+  "equations": "Native Office Math (OMML)",
+  "analysis_validation": "results/audit.json"
+}

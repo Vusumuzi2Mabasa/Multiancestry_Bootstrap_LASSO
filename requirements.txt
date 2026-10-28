@@ -2,6 +2,6 @@ numpy==2.3.5
 scipy==1.18.1
 numba==0.68.0
 MultiSuSiE @ git+https://github.com/jordanero/MultiSuSiE.git@a89e091d45297d983118438f116c3eb5bc1219ed
-pandas
+pandas==3.0.1
 matplotlib==3.11.2
-python-docx
+python-docx==1.2.0

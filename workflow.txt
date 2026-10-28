@@ -21,6 +21,7 @@ Do not overwrite a user's existing package libraries.
 Input reuse and provenance:
 & $py src/prepare_inputs.py --source-study 'D:/Multiancestry_GWAS_Bayesian_Comparison'
 & $py src/test_pipeline.py
+& $py src/test_cli.py
 & $py src/row_diagnostic.py
 
 The six region_*.npz inputs are LOCAL ONLY, including public-reference haplotypes.
@@ -41,8 +42,9 @@ git commit -m 'Freeze independently tuned penalty before validation'
 & $py src/benchmark.py --phase validation --stage calibrate --workers 2
 git add protocol/validation_threshold_freeze.json results/validation
 git commit -m 'Freeze null calibration thresholds before fresh evaluation'
-& $py src/benchmark.py --phase validation --stage evaluate --workers 2
+& $py src/benchmark.py --phase validation --stage evaluate --workers 4
 & $py src/analyze.py
+& $py src/replay_audit.py
 & $py src/build_manuscript.py
 
 Completed shards are reused only when core implementation and design hashes match.

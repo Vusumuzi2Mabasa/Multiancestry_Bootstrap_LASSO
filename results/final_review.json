@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "raw_genotypes_tracked": false,
+  "donor_identifier_files_tracked": false,
+  "remote_configured": false,
+  "report_author": "Vusumuzi Mabasa",
+  "native_equations": true,
+  "all_results_audited": true,
+  "manifest_files": 133,
+  "source_study_preserved_commit": "03a5a07826a82380e6a1a9191d4f0a7f61f0f6af",
+  "visual_review": "All rendered report pages inspected; see work/visual_review.json"
+}

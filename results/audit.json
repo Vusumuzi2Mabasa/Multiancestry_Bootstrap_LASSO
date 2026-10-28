@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "unique_evaluation_datasets": 2160,
+  "unique_calibration_datasets": 2388,
+  "paired_method_rows": 17280,
+  "variant_rows": 138240,
+  "failed_fits": 0,
+  "nonconverged": 0,
+  "max_kkt": 1.0996220645154153e-07,
+  "max_mse_reconstruction_error": 1.0581813203458523e-16,
+  "code_sha256": "dfe892eed058d8ed401d7e0cbd4fc72569cc1e88eaec1d1aaf9fd7716b8d8e02",
+  "total_joint_drops": 67,
+  "causal_filtered": 0,
+  "result_hashes": {
+    "results\\validation\\r0_LWK\\metrics.tsv": "e23025f49ef9b466a910f623ef82d21626053c95a43b54cca9825845c96abed2",
+    "results\\validation\\r0_YRI\\metrics.tsv": "61339ddbb9d3d6c115484f348d89af1944387791748704e4497bab9f9d035e00",
+    "results\\validation\\r1_LWK\\metrics.tsv": "894856b0c9ac38b588f30537c773250f7026fe85f23262e6981026f8949f989e",
+    "results\\validation\\r1_YRI\\metrics.tsv": "cf3546688a81ea1f830e972f166a0caf95e3a22bd03e31853a45c3f658384dee",
+    "results\\validation\\r2_LWK\\metrics.tsv": "416f2e76187b871bdbab2da6e598b53a0cec2b5ae8bdb2c6cd0e77e8ee78abbb",
+    "results\\validation\\r2_YRI\\metrics.tsv": "65f7e1b602dcf97f27a13f7c7ce3e5f0e838ac218c25dd68c61e5ed7c9c5bb46",
+    "results\\validation\\r3_LWK\\metrics.tsv": "8aa8b7572c89726b9a6ac68b33d7cdd84e2c5fef576a017c5d4923669a79c774",
+    "results\\validation\\r3_YRI\\metrics.tsv": "eb445d0a25f8b92031ad1799d0c4fbc04835ab310e92b650700e7f65db4b581b",
+    "results\\validation\\r4_LWK\\metrics.tsv": "39767524d8bd4d2377641b1e66dc3447953eddb89709405d73d9973ef1691fb5",
+    "results\\validation\\r4_YRI\\metrics.tsv": "9430f053ceec4d09d22ab2d6edfcbc62dca42ad0fa39ad2149fbf749f558bfba",
+    "results\\validation\\r5_LWK\\metrics.tsv": "793ec2ac9f8f05190190bee4a021a76e2bf0bdc25e8029d73f1e6a0350103945",
+    "results\\validation\\r5_YRI\\metrics.tsv": "834020c576d9e75cf4cb1a36058f1363a09998d797f1b382d7b9a14490f98f57"
+  }
+}

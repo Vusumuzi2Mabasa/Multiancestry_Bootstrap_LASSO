@@ -8,6 +8,16 @@ The upstream source at commit 296953627d2d2b7bc3bfa04cf65524c5013c3b41 separates
 
 All eight marginal rows remain in each `.ma` file even when an extract mask is used. This matters: upstream `read_sumstat` computes phenotype variance from all parsed marginal rows, including rows outside the selected set. Truncating the `.ma` files to selected markers would change the joint estimator's scaling. Numerical controls compare the summary reconstruction with official coefficients and SEs, and replay stepwise selected sets through joint-only mode.
 
+## Public references and simulated traits
+
+The six GRCh37 chromosome 22 windows span 100 kb beginning at 20, 25, 30, 35, 40 and 45 Mb. The source study selected eight coordinate-spaced, complete phased PASS biallelic nonambiguous SNPs per window, with minor allele frequency at least 0.05 in each population and donor pool. Its thinning rejected haplotype pairwise squared correlations at least 0.95 and near-singular diploid LD matrices. The reused reference QC tables and signed LD are published in results/reference; the local haplotypes are authenticated by hashes. No new variant selection was based on phenotypes.
+
+Each population has 40 external-reference donors. Disjoint study-generating pools contain 59 CEU, 68 YRI and 59 LWK donors. Each simulated participant independently draws two complete local haplotypes with replacement from the relevant study pool. This preserves local haplotype structure but adds neither new reference diversity nor between-region linkage. Cohorts contain 2,000 CEU and 250 YRI or LWK participants. For centered genotype matrix $X_k$, every phenotype is generated as
+
+$$y_k=X_k\beta_k+\epsilon_k,\qquad \epsilon_k\sim N(0,I_{n_k}).$$
+
+Effects are per additional alternate allele in residual-SD units. The null has all coefficients zero. The one-causal architecture uses marker 2 with effect 0.22 in both populations. Shared effects use markers 2 and 7, both 0.22 in both populations. At markers 2 and 7, heterogeneous effects are $(0.22,0)$ in CEU and $(0.10,0.28)$ in the African-source cohort. The three-causal architecture uses markers 2, 5 and 7 with CEU effects $(0.22,-0.16,0)$ and African-source effects $(0.10,-0.16,0.28)$. All other coefficients are zero. Marker numbering here is one-based; code and protocol arrays are zero-based.
+
 ## Working summary model
 
 For population k and marker j, let b, s, f and N be the harmonized marginal coefficient, SE, effect-allele frequency and sample size. Reproduce the default GCTA scaling in upstream `src/read_files.cpp`:
@@ -21,7 +31,7 @@ $$Q_{ij,k}=R_{ij,k}\min(n^{eff}_{ik},n^{eff}_{jk})\sqrt{v_{ik}v_{jk}},\qquad q_k
 
 The working likelihood is q conditional on beta distributed as normal with mean Q beta and covariance V Q. This covariance is an explicit approximation when Q is reconstructed with external LD, the total-phenotype proxy V, and effective sample sizes. It is not the exact finite-sample distribution of all reported GWAS statistics. No external-reference uncertainty, overlapping-cohort covariance or admixture is integrated. Population cohorts are independent; variants within populations remain correlated. We reject non-positive-definite matrices rather than conceal a repair.
 
-Set H=Q/V, S=diag(sqrt(diag(H))), A=S inverse H S inverse, z=S inverse q/V=S b, and t=S beta. Minimize
+Set $H_k=Q_k/V_k$, $S_k=\operatorname{diag}(\sqrt{\operatorname{diag}(H_k)})$, $A_k=S_k^{-1}H_kS_k^{-1}$, $z_k=S_k^{-1}q_k/V_k=S_kb_k$, and $t_k=S_k\beta_k$. Minimize
 
 $$\sum_{k=1}^2\left\{\frac12t_k^TA_kt_k-z_k^Tt_k+\lambda\sum_j|t_{jk}|\right\}.$$
 
