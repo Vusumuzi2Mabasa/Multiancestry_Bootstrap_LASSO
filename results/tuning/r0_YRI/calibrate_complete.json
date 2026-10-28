@@ -1,8 +1,8 @@
 {
-  "code_sha256": "a78bbbc7b9bf983f35a590f38f2534cfcce3fde2aff31d323d07a8eb8e1fd7c1",
+  "code_sha256": "dfe892eed058d8ed401d7e0cbd4fc72569cc1e88eaec1d1aaf9fd7716b8d8e02",
   "contexts": 198,
-  "R_batch_wall_seconds": 34.51347769994754,
+  "R_batch_wall_seconds": 30.833208300056867,
   "max_kkt": 9.523406285794067e-08,
-  "threshold_sha256": "95e62d4e853ad6527e0258337c23397b2b5a7519edeb8f56245ca98f7dd38ceb",
+  "threshold_sha256": "fc738e3a37d33c9d2a96faff8b25e4822ab2260ca344b01d1901f2472eddab99",
   "failed_fits": 0
 }

@@ -3,30 +3,30 @@
   "candidates": [
     {
       "lambda_value": 1,
-      "null_rate": NaN,
-      "recall_minus_fdp": 0.33125000000000004
+      "null_rate": 0.016666666666666666,
+      "recall_minus_fdp": 0.33125
     },
     {
       "lambda_value": 1.5,
-      "null_rate": NaN,
+      "null_rate": 0.03333333333333333,
       "recall_minus_fdp": 0.6941666666666666
     },
     {
       "lambda_value": 2,
-      "null_rate": NaN,
-      "recall_minus_fdp": 0.6947916666666668
+      "null_rate": 0.016666666666666666,
+      "recall_minus_fdp": 0.6947916666666667
     },
     {
       "lambda_value": 2.5,
-      "null_rate": NaN,
+      "null_rate": 0.03333333333333333,
       "recall_minus_fdp": 0.7072916666666667
     }
   ],
-  "fallback": true,
-  "code_sha256": "a78bbbc7b9bf983f35a590f38f2534cfcce3fde2aff31d323d07a8eb8e1fd7c1",
+  "fallback": false,
+  "code_sha256": "dfe892eed058d8ed401d7e0cbd4fc72569cc1e88eaec1d1aaf9fd7716b8d8e02",
   "evaluation_seed": 942803,
   "tuning_metrics_sha256": {
-    "results\\tuning\\r0_YRI\\metrics.tsv": "f55d232cab81fb90d2d24e2b2c1335c1334fb7889ba6a2d386bad1c4f335eebc",
-    "results\\tuning\\r4_YRI\\metrics.tsv": "882723fbd6d87220c88dd2477832b790864677429c5e35e67a263000b0edb963"
+    "results\\tuning\\r0_YRI\\metrics.tsv": "ebb9e3443e8cd9c497bd344b9636087bad7d87de4b6eff3283270260f02b8cb2",
+    "results\\tuning\\r4_YRI\\metrics.tsv": "3bc0e812679aa90199366ad0243b88fb6bad289141593b2a277f93d9e0166944"
   }
 }
